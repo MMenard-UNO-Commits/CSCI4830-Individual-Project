@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Class Assignment Manager</title>
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> Manage Assignments </h1>
+</header>
+<section>
+	<h1>Show List of Assignments</h1>
+	
+	<form action="TaskListDisplayMenard" method="POST">
+		<input type="submit" value="Display" />
+	</form>
+
+</section>
+
+<section>
+	<h1>Log an Assignment in the List</h1>
+	
+	<form action="TaskInsertMenard" method="POST">
+	
+		Assignment name: <input type="text" name="taskName"> <br />
+		Class Name: <input type="text" name="className"> <br />
+		Date Due: <input type="text" name="date"> <br />
+		Time Due: <input type="text" name="time"> <br />
+		
+		<input type="submit" value="Submit" />
+	</form>
+
+</section>
+
+<section>
+	<h1>Delete an Assignment From the List</h1>
+	
+	<form action="TaskDeleteMenard" method="POST">
+	
+		Assignment name: <input type="text" name="taskName"> <br />
+		<input type="submit" value="Submit" />
+	</form>
+
+</section>
+
+<footer>
+Copyright Michael Menard, 10/2020
+</footer>
+</body>
+</html>
